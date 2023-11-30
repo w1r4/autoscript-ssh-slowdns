@@ -62,8 +62,8 @@ systemctl enable rc-local
 systemctl start rc-local.service
 
 # disable ipv6
-echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
-sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
+#echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
+#sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 #update
 apt-get remove --purge ufw firewalld -y
